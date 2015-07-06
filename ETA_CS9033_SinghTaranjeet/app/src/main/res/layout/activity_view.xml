@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BABABA"
+    tools:context="com.nyu.cs9033.eta.controllers.ViewTripActivity">
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#BABABA"
+    tools:context="com.nyu.cs9033.eta.controllers.ViewTripActivity">
+
+
+    <LinearLayout
+        android:id = "@+id/btnLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+    <Button
+        android:id="@+id/buttonStartTrip"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="@string/startTrip"
+        android:background="#006699"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/buttonStopTrip"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="@string/stopTrip"
+        android:background="#006699"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/viewTripNameId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/view_Trip_Name"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_below="@id/btnLayout"
+        android:background="#003366"
+        android:textColor="#FFFFFF"
+        android:gravity="start"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/txtTripName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/viewTripNameId"
+        android:layout_alignLeft="@id/viewTripNameId"
+        android:layout_below="@id/viewTripNameId"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:text="@string/empty_text_view"
+        android:gravity="start|bottom"
+        android:layout_alignRight="@+id/viewTripNameId"
+        android:layout_alignEnd="@+id/viewTripNameId" />
+
+    <TextView
+        android:id="@+id/viewTripDestId"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/view_Trip_Location"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/viewTripNameId"
+        android:layout_alignStart="@+id/viewTripNameId"
+        android:layout_below="@id/txtTripName"
+        android:background="#003366"
+        android:gravity="start"
+        android:textColor="#FFFFFF"
+        android:padding="5dp"
+        android:layout_alignRight="@+id/viewTripNameId"
+        android:layout_alignEnd="@+id/viewTripNameId" />
+
+    <TextView
+        android:id="@+id/txtTripDest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/viewTripDestId"
+        android:layout_alignLeft="@id/viewTripDestId"
+        android:layout_below="@id/viewTripDestId"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:text="@string/empty_text_view"
+        android:gravity="start|bottom"
+        android:layout_alignRight="@+id/viewTripDestId"
+        android:layout_alignEnd="@+id/viewTripDestId" />
+
+    <TextView
+        android:id="@+id/viewTripDateId"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="@string/view_Trip_Date"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:layout_below="@id/txtTripDest"
+        android:layout_alignLeft="@+id/viewTripNameId"
+        android:layout_alignStart="@+id/viewTripNameId"
+        android:background="#003366"
+        android:gravity="start"
+        android:padding="5dp"
+        android:textColor="#FFFFFF"
+        android:layout_alignRight="@+id/viewTripDestId"
+        android:layout_alignEnd="@+id/viewTripDestId" />
+
+    <TextView
+        android:id="@+id/txtTripDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/viewTripDateId"
+        android:layout_alignLeft="@id/viewTripDateId"
+        android:layout_below="@id/viewTripDateId"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:text="@string/empty_text_view"
+        android:gravity="start|bottom"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/viewTripTimeId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/view_Trip_Time"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/txtTripDate"
+        android:layout_alignLeft="@+id/viewTripNameId"
+        android:layout_alignStart="@+id/viewTripNameId"
+        android:padding="5dp"
+        android:gravity="start"
+        android:background="#003366"
+        android:textColor="#FFFFFF"
+        android:layout_alignRight="@+id/viewTripDateId"
+        android:layout_alignEnd="@+id/viewTripDateId" />
+
+    <TextView
+        android:id="@+id/txtTripTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/viewTripTimeId"
+        android:layout_alignLeft="@id/viewTripTimeId"
+        android:layout_below="@id/viewTripTimeId"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:text="@string/empty_text_view"
+        android:gravity="start|bottom"
+        android:layout_alignRight="@+id/viewTripTimeId"
+        android:layout_alignEnd="@+id/viewTripTimeId" />
+
+    <TextView
+        android:id="@+id/friendsJoining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/friendsList"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txtTripTime"
+        android:layout_alignLeft="@+id/viewTripNameId"
+        android:layout_alignStart="@+id/viewTripNameId"
+        android:textColor="#FFFFFF"
+        android:gravity="start"
+        android:background="#003366"
+        android:padding="5dp"
+        android:layout_alignRight="@+id/viewTripTimeId"
+        android:layout_alignEnd="@+id/viewTripTimeId" />
+
+    <ListView
+        android:id="@+id/friendsJoiningId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"
+        android:divider="@color/button_color"
+        android:layout_below="@+id/friendsJoining"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/buttonScheduledTrips"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/scheduledTrips"
+        android:background="#006699"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/friendsJoiningId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

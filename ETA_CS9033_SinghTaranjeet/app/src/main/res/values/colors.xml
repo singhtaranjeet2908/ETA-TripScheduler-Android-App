@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <color name = "button_color">#006699</color>
+    <color name = "button_text_color">#FFFFFF</color>
+    <color name = "button_text_color_disabled">#707070</color>
+    <color name = "button_background_color_disabled">#A7A7A7</color>
+    <color name = "active_trip_text_color">#00CC00</color>
+    <color name = "inactive_trip_text_color">#CF0000</color>
+    <color name = "activity_background_color">#BABABA</color>
+</resources>

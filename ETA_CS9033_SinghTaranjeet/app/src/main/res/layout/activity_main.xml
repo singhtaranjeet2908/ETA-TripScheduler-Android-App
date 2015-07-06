@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/trip_snow"
+    android:orientation="vertical"
+    tools:context="com.nyu.cs9033.eta.controllers.MainActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+    <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/label_activity_Main"
+        android:id="@+id/lblAppTitle"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="80dp"
+        android:textSize="30sp"
+
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:textColor="#003366"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/label_Trip_Status"
+        android:id="@+id/lblTripStatus"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:textColor="#CF0000"
+        android:textStyle="bold"
+        android:background="#FFFFFF"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+
+    <Button
+        android:id="@+id/create_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+
+        android:text="@string/button_Create"
+        android:background="#006699"
+
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#ffffffff"
+        android:layout_gravity="center" />
+
+    <Button
+        android:id="@+id/view_button"
+        android:layout_width="223dp"
+        android:layout_height="wrap_content"
+        android:text="@string/button_View"
+
+        android:background="#006699"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center" />
+
+    <Button
+        android:id="@+id/activeTripStatus"
+        android:layout_width="223dp"
+        android:layout_height="wrap_content"
+        android:text="@string/buttonTripStatus"
+        android:background="#006699"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center" />
+
+</LinearLayout>
+</ScrollView>
+</RelativeLayout>
+
+
+

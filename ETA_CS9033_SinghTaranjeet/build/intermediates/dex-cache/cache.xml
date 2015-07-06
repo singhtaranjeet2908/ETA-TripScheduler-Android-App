@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Taranjeet\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="C:\Users\Taranjeet\AndroidStudioProjects\ETA_CS9033_SinghTaranjeet\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-20349f0539250bf9409e800a30e61a1b6fdef594.jar" />
+    </item>
+
+</items>

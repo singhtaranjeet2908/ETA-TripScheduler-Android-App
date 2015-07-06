@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BABABA"
+    tools:context="com.nyu.cs9033.eta.controllers.TripHistoryActivity" >
+
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textPresent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="#003366"
+        android:textSize="20sp"
+        android:text="@string/lbl_present_trips"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:padding="5dp" />
+
+    <ListView
+        android:id="@+id/listPresent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/textFuture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="#003366"
+        android:textSize="20sp"
+        android:text="@string/lbl_future_trips"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="#FFFFFF" />
+
+    <ListView
+        android:id="@+id/listFuture"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/textPast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="#003366"
+        android:textSize="20sp"
+        android:text="@string/lbl_past_trips"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textColor="#FFFFFF" />
+
+    <ListView
+        android:id="@+id/listPast"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp" >
+    </ListView>
+
+
+    <Button
+        android:id="@+id/buttonHome"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="125dp"
+
+        android:layout_height="wrap_content"
+        android:text="@string/HomeButton"
+        android:background="#006699"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:padding="10dp"
+
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"
+        android:textSize="20sp" />
+
+</LinearLayout>
+</ScrollView>
+</RelativeLayout>

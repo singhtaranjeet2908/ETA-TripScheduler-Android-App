@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Android_Projects/ETA-TripScheduler/ETA_CS9033_SinghTaranjeet/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="active_trip_text_color">#00CC00</color>
+    <color name="activity_background_color">#BABABA</color>
+    <color name="button_background_color_disabled">#A7A7A7</color>
+    <color name="button_color">#006699</color>
+    <color name="button_text_color">#FFFFFF</color>
+    <color name="button_text_color_disabled">#707070</color>
+    <color name="inactive_trip_text_color">#CF0000</color>
+    <!-- From: file:/C:/Android_Projects/ETA-TripScheduler/ETA_CS9033_SinghTaranjeet/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- From: file:/C:/Android_Projects/ETA-TripScheduler/ETA_CS9033_SinghTaranjeet/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="AddFriend">Add Friend</string>
+    <string name="CancelTrip">Cancel Trip</string>
+    <string name="Create_Loc_Hint">Search Destination</string>
+    <string name="Create_Name_Hint">Trip Name</string>
+    <string name="Create_Trip_Date">Select Date</string>
+    <string name="Create_Trip_Time">Trip Time (HH:MM)</string>
+    <string name="HomeButton">Home</string>
+    <string name="SaveTrip">Save Trip</string>
+    <string name="SelectLocation">Search Destination</string>
+    <string name="Trip_Date">*Trip Date : </string>
+    <string name="Trip_Friends">*Friends : </string>
+    <string name="Trip_List">Trip Details</string>
+    <string name="Trip_Location">*Destination :</string>
+    <string name="Trip_Name">*Trip Name :</string>
+    <string name="Trip_Time">Start Time :</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">ETA</string>
+    <string name="buttonTripStatus">Active Trip Status</string>
+    <string name="button_Create">Schedule Trip</string>
+    <string name="button_View">View Scheduled Trips </string>
+    <string name="empty_text_view">TextView</string>
+    <string name="friendsList">Trip Mates :</string>
+    <string name="label_Trip_Status">NO ACTIVE TRIP !</string>
+    <string name="label_activity_Main">Trip Scheduler</string>
+    <string name="lbl_future_trips">FUTURE TRIPS</string>
+    <string name="lbl_item_date">Item Date</string>
+    <string name="lbl_item_name">Item Name</string>
+    <string name="lbl_past_trips">PAST TRIPS</string>
+    <string name="lbl_present_trips">TODAY\'s TRIPS</string>
+    <string name="mandatory">*All fields are mandatory.</string>
+    <string name="scheduledTrips">Back to Scheduled Trips</string>
+    <string name="searchArea">Search Area :</string>
+    <string name="searchItem">Search Item :</string>
+    <string name="search_area_hint">e.g. NYU, New York</string>
+    <string name="search_item_hint">e.g. Indian Food</string>
+    <string name="startTrip">Start Trip</string>
+    <string name="stopTrip">Stop Trip</string>
+    <string name="title_activity_Create">Schedule Trip</string>
+    <string name="title_activity_Main">MainActivity</string>
+    <string name="title_activity_View">Trip Details</string>
+    <string name="title_activity_trip_history">Scheduled Trips</string>
+    <string name="view_Trip_Date">Trip Date : </string>
+    <string name="view_Trip_Location">Destination :</string>
+    <string name="view_Trip_Name">Trip Name :</string>
+    <string name="view_Trip_Time">Start Time :</string>
+    <!-- From: file:/C:/Android_Projects/ETA-TripScheduler/ETA_CS9033_SinghTaranjeet/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+</resources>

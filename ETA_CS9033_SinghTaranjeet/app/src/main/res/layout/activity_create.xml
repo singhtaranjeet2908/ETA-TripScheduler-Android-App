@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BABABA"
+    tools:context="com.nyu.cs9033.eta.controllers.CreateTripActivity">
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="fill_vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        android:text="@string/Trip_Name" />
+
+    <EditText
+        android:id="@+id/tripNameId"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/textView1"
+        android:layout_toRightOf="@id/textView1"
+        android:layout_alignBottom="@id/textView1"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="@string/Create_Name_Hint"
+        android:gravity="bottom" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textView1"
+        android:layout_alignStart="@id/textView1"
+        android:layout_below="@id/textView1"
+        android:layout_marginTop="26dp"
+        android:textSize="20sp"
+        android:text="@string/Trip_Location"/>
+
+
+    <EditText
+        android:id="@+id/tripLocationId"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tripNameId"
+        android:layout_marginTop="10dp"
+        android:layout_alignBottom="@id/textView2"
+        android:layout_toRightOf="@id/textView2"
+        android:layout_toEndOf="@id/textView2"
+        android:ems="10"
+        android:inputType="none"
+        android:hint="@string/Create_Loc_Hint"
+        android:gravity="bottom"  />
+
+    <TextView
+        android:id="@+id/txtSearchArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/searchArea"
+        android:layout_below="@+id/textView2"
+        android:textSize="15sp"
+        android:layout_marginTop="26dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <EditText
+        android:id="@+id/edtSearchArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="@string/search_area_hint"
+        android:layout_below="@+id/textView2"
+        android:layout_alignBottom="@+id/txtSearchArea"
+
+        android:layout_alignRight="@+id/searchLocationButton"
+        android:layout_alignEnd="@+id/searchLocationButton"
+        android:layout_alignLeft="@+id/edtSearchItem"
+        android:layout_alignStart="@+id/edtSearchItem"
+        android:gravity="bottom" />
+
+    <TextView
+        android:id="@+id/txtSearchItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtSearchArea"
+        android:layout_alignStart="@+id/txtSearchArea"
+        android:layout_below="@id/txtSearchArea"
+        android:layout_marginTop="26dp"
+        android:textSize="15sp"
+        android:text="@string/searchItem"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/edtSearchItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="@string/search_item_hint"
+        android:layout_alignBottom="@+id/txtSearchItem"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/textView2"
+        android:gravity="bottom" />
+
+    <Button
+        android:id="@+id/searchLocationButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/SelectLocation"
+        android:layout_below="@id/edtSearchItem"
+        android:layout_alignRight="@id/edtSearchItem"
+        android:layout_alignEnd="@id/edtSearchItem"
+        android:enabled="false"
+        android:singleLine="true"
+
+        android:textColor="#707070"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textView2"
+        android:layout_alignStart="@id/textView2"
+        android:layout_below="@id/txtSearchItem"
+        android:layout_marginTop="75dp"
+        android:text="@string/Trip_Date"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tripDateId"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tripLocationId"
+        android:layout_alignStart="@id/tripLocationId"
+        android:layout_alignBottom="@id/textView3"
+        android:layout_toRightOf="@id/textView3"
+        android:layout_toEndOf="@id/textView3"
+        android:layout_below="@+id/searchLocationButton"
+        style="@android:style/Widget.Holo.Light.Spinner"
+        android:hint="@string/Create_Trip_Date"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="bottom"
+        android:textSize="18sp"
+
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textView3"
+        android:layout_alignStart="@id/textView3"
+        android:layout_below="@id/textView3"
+        android:layout_marginTop="26dp"
+        android:textSize="20sp"
+        android:text="@string/Trip_Time" />
+
+    <EditText
+        android:id="@+id/tripTimeId"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tripDateId"
+        android:layout_alignLeft="@id/tripDateId"
+        android:layout_alignStart="@id/tripDateId"
+        android:layout_alignBottom="@id/textView4"
+        android:layout_toRightOf="@id/textView4"
+        android:layout_toEndOf="@id/textView4"
+        android:ems="10"
+        android:inputType="time"
+        android:hint="@string/Create_Trip_Time"
+        android:gravity="bottom"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textView4"
+        android:layout_alignStart="@id/textView4"
+        android:layout_below="@id/textView4"
+        android:layout_marginTop="26dp"
+        android:textSize="20sp"
+        android:text="@string/Trip_Friends"/>
+
+
+    <Spinner
+        android:id="@+id/spinnerFriendsId"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tripTimeId"
+        android:layout_alignLeft="@id/tripTimeId"
+        android:layout_alignStart="@id/tripTimeId"
+        android:layout_alignBottom="@id/textView5"
+        android:layout_toRightOf="@id/textView5"
+        android:layout_toEndOf="@id/textView5"
+        android:gravity="bottom"
+        android:layout_marginTop="10dp"
+        android:spinnerMode="dropdown" />
+
+    <Button
+        android:id="@+id/addFriendButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/AddFriend"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/searchLocationButton"
+        android:layout_alignStart="@+id/searchLocationButton"
+        android:background="#006699"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_below="@+id/spinnerFriendsId" />
+
+    <TextView
+        android:id="@+id/textMandatory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textView5"
+        android:layout_alignStart="@id/textView5"
+        android:layout_below="@id/addFriendButton"
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"
+        android:text="@string/mandatory"
+        android:textColor="#B80000" />
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/textMandatory"
+    android:layout_marginTop="10dp"
+    android:weightSum="2"
+
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/saveTripButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/SaveTrip"
+        android:layout_weight="1"
+        android:padding="10dp"
+
+        android:textColor="#707070"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:enabled="false" />
+
+    <Button
+        android:id="@+id/cancelTripButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/CancelTrip"
+        android:layout_weight="1"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:padding="10dp"
+        android:background="#006699"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+
+</LinearLayout>
+
+
+</RelativeLayout>
+</ScrollView>
+</LinearLayout>
